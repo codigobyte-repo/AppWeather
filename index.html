@@ -39,7 +39,8 @@
     </div>
 
 <script>
-    const apiKey = "6d3879fd4d48e34cb96974a67a7b8e29";
+    /* Obtener API-KEY de https://openweathermap.org/ */
+    const apiKey = "XXX";
     const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
     
     const searchBox = document.querySelector(".search input");
@@ -83,8 +84,16 @@
 
     }
 
+    /* Evento que se dispara al hacer click sobre el botón */
     searchBtn.addEventListener("click", () => {
         checkWeather(searchBox.value);
+    })
+    /* Evento que se dispara al hacer escribir y presionar enter  */
+    searchBox.addEventListener("keydown", (event) =>{
+        if(event.key === "Enter"){
+            event.preventDefault();
+            checkWeather(searchBox.value);
+        }
     })
 </script>
 
