@@ -7,7 +7,7 @@ Este proyecto permite consultar la temperatura, la velocidad del viento y la hum
 - Porcentaje de humedad
 
 ## Requisitos
-- Ninguno
+- Conocer HTML5, CSS3 y JAVASCRIPT
 
 ## Cómo ejecutar el proyecto
 1. Clona este repositorio y abrelo desde el navegador.
